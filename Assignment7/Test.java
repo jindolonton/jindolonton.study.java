@@ -23,7 +23,6 @@ public class Test {
             }
             switch (x){
                 case 1:
-                    news.Nhap();
                     sv.AddNewsList(news);
                     break;
                 case 2:
