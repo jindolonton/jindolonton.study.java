@@ -9,12 +9,12 @@ public class Test {
         Scanner in = new Scanner(System.in);
         int x;
         do {
-            System.out.println("/n/t/t-----------------------------------------------------------------");
-            System.out.println("/t/t|0. Exit/t/t/t/t |");
-            System.out.println("/t/t|1. Insert News/t/t/t/t |");
-            System.out.println("/t/t|2. View List News/t/t/t/t |");
-            System.out.println("/t/t|3. AverageRate News/t/t/t/t |");
-            System.out.println("/t/t-------------------------------------------------------------------");
+            System.out.println("|----------------------------|");
+            System.out.println("|0. Exit                     |");
+            System.out.println("|1. Insert News              |");
+            System.out.println("|2. View List News           |");
+            System.out.println("|3. AverageRate News         |");
+            System.out.println("|----------------------------|");
             x=in.nextInt();
             while(x>3){
                 System.out.println("Chose Again:");

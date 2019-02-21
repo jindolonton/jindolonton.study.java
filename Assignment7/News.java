@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class News implements INews{
     @Override
     public void Display(){
-        System.out.println(+this.getID() +"    "+ this.getTitle()+ this.getPublishDate()+ this.getAuthor()+ this.getContent()+ this.getAverageRate());
+        System.out.println(+this.getID() +"----"+ this.getTitle()+"----"+ this.getPublishDate()+ "----"+this.getAuthor()+ "----"+this.getContent()+ "----"+this.getAverageRate());
 
     }
 
@@ -109,12 +109,12 @@ public class News implements INews{
         }
 
     }
-    public float Caculate(){
+    public void Caculate(){
         int TC=0;
         for(int i=0;i<3;i++){
             TC += RateList[i];
         }
-        return TC/3;
+        this.AverageRate=TC/3;
 
     }
 

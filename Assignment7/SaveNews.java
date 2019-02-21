@@ -10,7 +10,8 @@ public class SaveNews {
         this.NewsList=new ArrayList<News>();
     }
     public void AddNewsList(News news){
-        this.NewsList.add(news);
+        news.Nhap();
+        this.NewsList.add(new News(news.getID(),news.getTitle(),news.getPublishDate(),news.getAuthor(),news.getContent(),news.getAverageRate()));
 
     }
     public void RateNewsList(){
@@ -24,17 +25,8 @@ public class SaveNews {
                 if(this.NewsList.get(i).getID()==id){
                     System.out.println("Ban tin co ID= "+id+"la:" );
                     DisplayNewsList();
-                    news.Rate();float a;
-                    a=news.Caculate();
-                    System.out.println(news.Caculate());
-                    System.out.println(news.getAverageRate());
-                    this.NewsList.remove(news);
-
-                    News news2=new News( this.NewsList.get(i).getID(), this.NewsList.get(i).getTitle(),
-                            this.NewsList.get(i).getAuthor(), this.NewsList.get(i).getPublishDate(),
-                            this.NewsList.get(i).getContent(), a
-                    );
-                    this.NewsList.add(i,news2);
+                    this.NewsList.get(i).Rate();
+                    this.NewsList.get(i).Caculate();
                     this.NewsList.get(i).Display();
                     break;
 
