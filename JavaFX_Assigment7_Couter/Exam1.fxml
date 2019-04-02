@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="473.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JavaFX_Assigment7_Couter.Controller">
+   <children>
+      <AnchorPane layoutX="106.0" layoutY="24.0" prefHeight="344.0" prefWidth="389.0">
+         <children>
+            <Button fx:id="btStart" layoutX="44.0" layoutY="233.0" mnemonicParsing="false" onAction="#start" text="Start" />
+            <Button fx:id="btPause" layoutX="142.0" layoutY="233.0" mnemonicParsing="false" onAction="#pause" text="Pause" />
+            <Button fx:id="btReset" layoutX="252.0" layoutY="233.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+            <Text layoutX="60.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Count" />
+            <TextField fx:id="output" layoutX="136.0" layoutY="149.0" promptText="0" />
+            <Text layoutX="164.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Counter" wrappingWidth="56.0" AnchorPane.bottomAnchor="340.2578125" AnchorPane.leftAnchor="164.0" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="67.431640625" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
